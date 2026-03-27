@@ -118,8 +118,11 @@
     .hamburger svg{width:22px;height:22px}
 
     /* Mobile menu */
+    [hidden] {
+     display: none !important;
+    }
     .mobile{
-      display:none;
+      /*display:none;*/
       border-top:1px solid rgba(226,232,240,.7);
       background:#fff;
     }
@@ -133,6 +136,8 @@
     }
     .mobile a:hover{background:var(--soft);color:var(--text)}
     .mobile .row{display:flex;gap:10px;padding:12px}
+
+    
 
     /* Hero */
     .hero{
@@ -351,6 +356,7 @@
       .navlinks{display:none}
       .hamburger{display:flex}
       .mini-grid{grid-template-columns:1fr 1fr}
+      .nav-actions a {display: none;}
     }
     @media (max-width: 520px){
       .footer-logo{margin:auto;width: 60%; }
