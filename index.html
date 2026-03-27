@@ -1,0 +1,438 @@
+<!--https://你的帳號.github.io/longgang-church-->
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>龍岡靈糧堂｜Grace Church</title>
+  <meta name="description" content="歡迎來到龍岡靈糧堂。主日聚會、最新消息、講道影音、聯絡方式。" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+
+      <div class="nav" >
+        <a class="brand" href="#top" aria-label="回到首頁">
+          <span class="logo" aria-hidden="true"></span>
+          <!--<span>龍岡靈糧堂 <span style="color:var(--muted);font-weight:750">Grace Church</span></span>-->
+        </a>
+
+        <nav class="navlinks" aria-label="主選單">
+          <a href="#about">關於我們</a>
+          <a href="#gathering">聚會資訊</a>
+          <a href="#news">最新消息</a>
+          <a href="#sermons">講道影音</a>
+          <a href="#contact">聯絡我們</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn" href="#visit">第一次來？</a>
+          <a class="btn primary" href="#gathering">本週聚會</a>
+          <button class="hamburger" id="menuBtn" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileMenu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile" id="mobileMenu" hidden>
+        <div class="mobile-inner container">
+          <a href="#about">關於我們</a>
+          <a href="#gathering">聚會資訊</a>
+          <a href="#news">最新消息</a>
+          <a href="#sermons">講道影音</a>
+          <a href="#contact">聯絡我們</a>
+          <div class="row">
+            <a class="btn" style="flex:1" href="#visit">第一次來？</a>
+            <a class="btn primary" style="flex:1" href="#gathering">本週聚會</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          
+          <h1>在這裡  找到歸屬、盼望與一起前行的家</h1>
+          <p>
+            <!--<span class="pill">歡迎來到龍岡靈糧堂</span>-->
+            我們是一群跟隨耶穌的人，願意用真誠的敬拜、彼此的陪伴、
+            與在生活中實踐愛，讓更多人看見福音的美好。
+          
+          </p>
+
+          
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#visit">第一次來怎麼走？</a>
+            <a class="btn" href="#contact">我想認識你們</a>
+          </div>
+
+          <div class="mini-grid" style="margin-top:18px">
+            <div class="mini bgA">
+              <b>主日崇拜</b>
+              <span>每週日 9:30</span>
+            </div>
+            <div class="mini bgC">
+              <b>地址</b>
+              <span>桃園市平鎮區中山路71號</span>
+            </div>
+            <div class="mini bgB">
+              <b>兒童主日學</b>
+              <span>同步進行</span>
+            </div>
+            <div class="mini bgD">
+              <b>線上直播</b>
+              <span>YouTube / FB</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card bgE" id="gathering" aria-label="本週聚會資訊">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 7V3m8 4V3M4 11h16M6 21h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/>
+            </svg>
+          </div>
+          <h3 style="margin:0 0 6px">本週聚會</h3>
+          <!--<p style="margin:0;color:var(--muted);font-weight:650">把這裡改成你們教會實際時間與地點</p>-->
+
+          <div style="display:grid;gap:10px;margin-top:14px">
+            <div class="card" style="box-shadow:none">
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:center">
+                <div>
+                  <b>主日崇拜</b>
+                  <div class="meta">週日 9:30｜主堂</div>
+                </div>
+                <span class="tag">現場 + 線上</span>
+              </div>
+            </div></div>
+
+            <div style="display:grid;gap:10px;margin-top:14px">
+            <div class="card" style="box-shadow:none">
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:center">
+                <div>
+                  <b>兒童主日學</b>
+                  <div class="meta">週日 9:30｜副堂</div>
+                </div>
+                <span class="tag">實體</span>
+              </div>
+            </div>
+            </div>
+
+            <div style="display:grid;gap:10px;margin-top:14px">
+            <div class="card" style="box-shadow:none">
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:center">
+                <div>
+                  <b>禱告會</b>
+                  <div class="meta">週三 19:30｜副堂</div>
+                </div>
+                <span class="tag">實體</span>
+              </div>
+            </div>
+            </div>
+
+            <div style="display:grid;gap:10px;margin-top:14px">
+            <div class="card" style="box-shadow:none">
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:center">
+                <div>
+                  <b>小組聚會</b>
+                  <div class="meta">週日 11:30｜各小組</div>
+                </div>
+                <span class="tag">分區</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+            <a class="btn primary" href="#visit" style="flex:1;min-width:180px">交通/停車資訊</a>
+            <a class="btn" href="#sermons" style="flex:1;min-width:180px">觀看講道</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>關於我們</h2>
+        <p>簡短、溫暖、讓新朋友快速理解</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <div class="card-image" aria-hidden="true">
+            
+            <div class="post-thumbnail"><img src="images/bible.jpg" alt="Image" class="img-fluid"></div>
+            <!--<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 6.6-7 11-7 11z"/>
+            </svg>-->
+          </div>
+          <h3>我們的異象</h3>
+          <p>成為城市中的祝福，讓人遇見神的愛、經歷更新，並彼此建立。</p>
+        </div>
+
+        <div class="card">
+          <div class="card-image" aria-hidden="true">
+            
+            <div class="post-thumbnail"><img src="images/heart2.jpg" alt="Image" class="img-fluid"></div>
+            <!--<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z"/>
+            </svg>-->
+          </div>
+          <h3>我們在做什麼</h3>
+          <p>主日敬拜、門徒訓練、小組關懷、社區服務、兒童與青少年陪伴。</p>
+        </div>
+
+        <div class="card">
+          <div class="card-image" aria-hidden="true">
+            
+            <div class="post-thumbnail"><img src="images/jeffjacobs.jpg" alt="Image" class="img-fluid"></div>
+            <!--<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>-->
+          </div>
+          <h3>第一次來？</h3>
+          <p>你不用先「懂很多」。來就好，我們會有人帶你認識環境，也可坐在後排慢慢熟悉。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- News -->
+  <section id="news" class="bgA">
+    <div class="container">
+      <div class="section-title">
+        <h2>最新消息</h2>
+        <p></p>
+      </div>
+
+      <div class="grid3">
+        <article class="card">
+          <span class="tag-color bgA">活動</span>
+          <h3 style="color:var(--text);">新朋友午餐交流</h3>
+          <p>聚會後一起吃飯，輕鬆認識教會與小組。歡迎留下名字，我們會聯絡你。</p>
+          <div class="meta">日期：2026/03/01</div>
+        </article>
+
+        <article class="card ">
+          <span class="tag-color bgB">課程</span>
+          <h3 style="color:var(--text);">慕道/基要真理班</h3>
+          <p>從零開始認識信仰：耶穌是誰、禱告、讀經、教會生活。</p>
+          <div class="meta">日期：2026/03/08 起</div>
+        </article>
+
+        <article class="card">
+          <span class="tag-color bgD">公告</span>
+          <h3 style="color:var(--text);">本月服事表與代禱事項</h3>
+          <p>如需代禱或探訪，歡迎透過聯絡表單留下訊息。</p>
+          <div class="meta">更新：2026/02/05</div>
+        </article>
+      </div>
+      <p>
+      <a class="btn"  style="color:var(--text);" href="#" onclick="alert('把這裡換成 Google Maps 連結'); return false;">點我看更多消息</a>
+    </p>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section id="visit" >
+    <div class="container">
+      <div class="section-title">
+        <h2>第一次來怎麼走？</h2>
+        <p>交通、停車、進場流程一目了然</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card-color bgA">
+          <h3>地址與交通</h3>
+          <p>桃園市平鎮區中山路71號</p>
+          <div class="meta-color">🚗 停車：附近停車場/路邊停車（請替換）</div>
+          <div class="meta-color">🚇 大眾運輸：捷運/公車資訊（請替換）</div>
+          <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" target="_blank" href="https://maps.app.goo.gl/U9K41hY6Xrzie1nt8">開啟 Google 地圖</a>
+            
+          </div>
+        </div>
+
+        <div class="card-color bgC">
+          <h3>進場與安排</h3>
+          <p>建議提前 10 分鐘到場。兒童主日學可在入口處報到，我們會協助帶領。</p>
+          <div class="meta-color">🧸 兒童：○○歲以上可參加（請替換）</div>
+          <div class="meta-color">☕ 茶點：聚會後有簡單交流時間</div>
+          <div class="meta-color">👕 服裝：輕鬆即可，不用緊張</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sermons -->
+  <section id="sermons">
+    <div class="container">
+      <div class="section-title">
+        <h2>講道影音</h2>
+        <p>最快做法：直接嵌入 YouTube 影片或播放清單</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>本週信息</h3>
+          <p>把下面的 YouTube 連結換成你們的影片即可。</p>
+          <div class="embed" style="margin-top:12px">
+            <!-- Replace the src with your YouTube embed URL -->
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="本週信息"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>播放清單（建議）</h3>
+          <p>用播放清單最省事：每週上傳新片會自動出現在這裡。</p>
+          <div class="embed" style="margin-top:12px">
+            <!-- Example: YouTube playlist embed -->
+            <iframe
+              src="https://www.youtube.com/embed/videoseries?list=PL9tY0BWXOZFvYwXxw0Xxw0Xxw0Xxw0Xxw"
+              title="講道播放清單"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>聯絡我們</h2>
+        <p></p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>聯絡資訊</h3>
+          <p>電話：(03)437-1718</p>
+          <p>Email：support@longgangllc.org</p>
+          <p>聚會地址：桃園市平鎮區中山路71號</p>
+          <!--<div class="meta">聚會地址：桃園市平鎮區中山路71號</div>-->
+          <div style="margin-top:2em;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn bgC" href="#" onclick="alert('把這裡換成 FB/IG 連結'); return false;">Facebook</a>
+            <a class="btn bgD" href="#" onclick="alert('把這裡換成 IG 連結'); return false;">Instagram</a>
+          </div>
+        </div>
+
+        <div class="card">
+
+<div id="map">
+        <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+        -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1187827850476!2d121.2546714!3d24.9280231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822875db21e97%3A0x9daeb898ff7d0c8c!2z5Z-6552j5pWZ6b6N5bKh6Z2I57On5aCC!5e0!3m2!1szh-TW!2stw!4v1774579531609!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+
+          <!--<h3>傳訊息給我們</h3>
+          <form class="form" onsubmit="return handleSubmit(event)">
+            <div>
+              <label for="name">姓名</label>
+              <input id="name" name="name" autocomplete="name" placeholder="王小明" required />
+            </div>
+            <div>
+              <label for="phone">電話/LINE（選填）</label>
+              <input id="phone" name="phone" placeholder="09xx-xxx-xxx 或 LINE ID" />
+            </div>
+            <div>
+              <label for="msg">訊息</label>
+              <textarea id="msg" name="msg" placeholder="我想了解你們的聚會 / 需要代禱 / 想加入小組…" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">送出</button>
+            <small style="color:var(--muted);font-weight:650">
+              ※ 這個範例先用「彈窗」表示送出成功；正式上線可接 Email 或表單服務。
+            </small>
+          </form>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>
+          <a href="index.html"><img class="footer-logo img-fluid" src="images/white_logo.svg" alt="龍岡靈糧堂LOGO"/></a>
+          
+        </div>
+        <div>
+          <small>
+            <a href="#about">關於我們</a> ·
+            <a href="#gathering">聚會資訊</a> ·
+            <a href="#news">最新消息</a> ·
+            <a href="#sermons">講道影音</a> ·
+            <a href="#contact">聯絡我們</a>
+          </small>
+          
+          
+        </div>
+        <p>龍岡靈糧堂 Bread of life christian in Long-gang © <span id="year"></span> All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
+      else menu.setAttribute('hidden', '');
+    });
+
+    // Close menu on link click (mobile)
+    menu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        btn.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('hidden','');
+      });
+    });
+
+    // Fake submit handler
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value?.trim() || '朋友';
+      alert(`已收到！謝謝你，${name}。我們會盡快回覆你 🙌`);
+      e.target.reset();
+      return false;
+    }
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
