@@ -11,8 +11,8 @@
       --border:#e2e8f0;    /* slate-200 */
       --card:#ffffff;
       --soft:#f8fafc;      /* slate-50 */
-      --brand:#2563eb;     /* blue-600 */
-      --brand2:#0ea5e9;    /* sky-500 */
+      --brand:#61AE0E;     /* blue-600 #2563eb*/
+      --brand2:#7BDF11;    /* sky-500 #0ea5e9*/
       --ring: rgba(37,99,235,.25);
       --shadow: 0 10px 30px rgba(15,23,42,.08);
       --radius: 18px;
@@ -84,7 +84,7 @@
     }
     .nav{
       display:flex;align-items:center;justify-content:space-between;
-      height:64px;font-size: 16px;
+      height:80px;font-size: 18px;
     }
     .brand{
       display:flex;align-items:center;gap:10px;
@@ -92,7 +92,7 @@
       padding-top:20px;
     }
     .logo{
-      width:230px;height:74px;border-radius:10px;
+      height:80px;width:275px;border-radius:10px;
 
       /*background: linear-gradient(135deg, var(--brand), var(--brand2));
       box-shadow: 0 10px 25px rgba(37,99,235,.25);*/
@@ -196,6 +196,28 @@
       box-shadow: var(--shadow);
       padding: 18px;
     }
+
+
+    .hero2{
+      position:relative;
+      overflow:hidden;
+      padding: 64px 0 24px;
+      background: url('images/bible.jpg') no-repeat left center;
+      background-size: cover;
+
+    }
+    .hero-grid2{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 28px;
+      align-items:stretch;
+      position:relative;
+      background: rgba(255,255,255,.5);
+
+    }
+
+
+
     .mini-grid{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -205,11 +227,12 @@
     .mini{
       border:1px solid var(--border);
       border-radius: 14px;
-      padding: 12px;
+      padding: 18px 12px;
+      font-size: 17px;
       /*background: #fff;*/
     }
     .mini b{display:block}
-    .mini span{color:var(--bg);font-weight:600}
+    .mini span{color:var(--bg);font-weight:normal;}
     .card-image div img {
       border-radius:8px;
       transition: all .4s  ease;
@@ -259,7 +282,7 @@
       box-shadow: 0 6px 18px rgba(15,23,42,.06);
     }
     .card h3{margin:4px 0 6px;font-size:20px}
-    .card p{margin:0;color:var(--muted)}
+    .card p{margin:0 0 18px 0;color:var(--muted)}
     .meta{margin-top:10px;color:var(--muted);font-weight:650;font-size:14px}
     .card-color{
       /*background: var(--card);*/
@@ -306,17 +329,19 @@
       padding: 30px 0 40px;
       border-top: 1px solid var(--border);
       background: var(--tempA);
-      margin-top: 22px;
+      /*margin-top: 22px;*/
     }
     .foot{
-      display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;
+      /*display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;*/
       color:var(--muted);
       font-weight:650;
     }
+    .foot div { margin:0; padding: 0;}
     .foot small{opacity:.9}
-    .foot a{color:var(--text)}
-    .foot a:hover{text-decoration:underline}
-    .footer-logo {width: 100%; }
+    
+    .foot > a{color:var(--text);}
+    .foot > a:hover{text-decoration:underline}
+    .footer-logo {width: 20%; margin:0 auto; padding: 0;}
     .foot p {
       color: var(--bg);
       border-top:1px solid #AFC2FF;
@@ -326,6 +351,14 @@
       margin:0;
       padding-top:15px;
       width: 100%;}
+    .foot span {margin-left:1em;}
+    .foot span a {color:var(--bg); border-color:var(--tempB);transition: all .3s ease;}
+    .foot span a:hover {color:var(--bg); background-color:var(--tempD);}
+    .foot ul { text-align: center; margin:0 0 1em; padding: 0;}
+    .foot ul li {font-size:16px;color: var(--bg); list-style: none; padding-right:1em; margin:auto;display: inline-block;}
+    .foot .facebook {font-family: "arial"; font-weight: bold; font-size: 20px; padding:7px 12px; border-radius: 50px; background: var(--tempC);transition: all .3s ease;}
+    .foot a.facebook:hover {background: var(--bg);color: var(--tempC);}
+
 
     /* Forms */
     .form{
