@@ -104,6 +104,7 @@
     }
     .navlinks a{padding:10px 8px;border-radius:10px}
     .navlinks a:hover{background:var(--soft);color:var(--text)}
+    .navlinks a.active{border-bottom:4px solid var(--tempA); color:var(--text); border-radius: 0px;}
 
     .nav-actions{display:flex;gap:10px;align-items:center}
     .hamburger{
@@ -208,12 +209,18 @@
     }
     .hero-grid2{
       display:grid;
-      grid-template-columns: 1.05fr .95fr;
+      grid-template-columns: 1.05fr .1fr;
       gap: 28px;
+      width: 60%;
+      background: rgba(255,255,255,.5);
       align-items:stretch;
       position:relative;
-      background: rgba(255,255,255,.5);
+      
 
+    }
+    
+    .hero-grid2 div{
+      padding-left:2em;
     }
 
 
@@ -273,6 +280,11 @@
       display:grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px;
+    }
+    .grid1{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
     }
     .card{
       background: var(--card);
