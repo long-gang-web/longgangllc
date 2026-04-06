@@ -4,9 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="images/favicon.png">
-  <title>社區關懷：龍岡靈糧堂｜Bread of life christian in Long-gang</title>
+  
+  <title>最新消息：龍岡靈糧堂｜Bread of life christian in Long-gang</title>
   <meta name="description" content="歡迎來到龍岡靈糧堂。主日聚會、最新消息、講道影音、聯絡方式。" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.css" />
+  
+
+
 </head>
 
 <body>
@@ -22,8 +27,8 @@
 
         <nav class="navlinks" aria-label="主選單">
           <a href="about.html">關於我們</a>
-          <a href="news.html">最新消息</a>
-          <a href="#" class="active">社區關懷</a>
+          <a href="#" class="active">最新消息</a>
+          <a href="community.html">社區關懷</a>
           <a href="index.html#sermons">講道影音</a>
           <a href="index.html#contact">交通資訊</a>
         </nav>
@@ -42,8 +47,8 @@
       <div class="mobile" id="mobileMenu" hidden>
         <div class="mobile-inner container">
           <a href="about.html">關於我們</a>
-          <a href="news.html">最新消息</a>
-          <a href="#" class="active">社區關懷</a>
+          <a href="#" class="active">最新消息</a>
+          <a href="community.html">社區關懷</a>
           <a href="index.html#sermons">講道影音</a>
           <a href="index.html#contact">交通資訊</a>
           <div class="row">
@@ -62,7 +67,7 @@
       <div class="hero-grid2">
         <div>
           
-          <h1>社區關懷</h1>
+          <h1>最新消息</h1>
           <p>
             <!--<span class="pill">歡迎來到龍岡靈糧堂</span>-->
             我們以異象前進
@@ -82,30 +87,48 @@
   <section id="director" >
     <div class="container">
       <div class="section-title">
-        <h2>小衛星國小陪讀班</h2>
+        <h2>最新消息</h2>
         <!--<p>交通、停車、進場流程一目了然</p>-->
       </div>
 
-      <div class="grid1">
-        <div class=""><!--card-->
-          <h3>關於小衛星</h3>
-          <p>
-這裡是一個充滿愛與關懷的學習空間，專為國小孩子設立。我們不只陪伴孩子完成課業，更重視他們的品格培養與情緒關懷，讓每一位孩子都能在被接納與鼓勵中成長。</p>
-<p>
-            在這裡，有溫暖的大人陪伴、有穩定的學習節奏，也有彼此相愛的氛圍。我們期望孩子不僅學習知識，更能建立自信、學會表達，並在愛中健康成長。
-            </p>
-            <p>
-            讓孩子在放學後，有一個安心、喜樂、被愛的地方。
-          </p>
+      <div class="grid">
+        <div class="card"><!--card-->
+          <h3>消息列表</h3>
+
+
+
+          <!-- page content -->
+        <table id="myTable" class="display">
+                      <thead>
+        <tr>
+            <th>分類</th>
+            <th>消息標題</th>
+            <th>日期</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>活動</td>
+            <td>新朋友午餐交流</td>
+            <td>2026/03/03</td>
+        </tr>
+        <tr>
+            <td>公告</td>
+            <td>本月服事表與代禱事項</td>
+            <td>2026/03/01</td>
+        </tr>
+    </tbody>
+                    </table>
+
+
+
+
+
          
           
         </div>
 
-        <div class=""><!--card-->
-          <h3>&nbsp;</h3>
-          <img src="images/heart2.jpg" class="img-fluid" style="width:90%;" alt="#" />
-          
-        </div>
+       
       </div>
 
 
@@ -116,7 +139,6 @@
 
 
   
-
   
   <footer>
     <div class="container">
@@ -169,6 +191,7 @@
 
   <!-- jQuery -->
     <script src="jquery-2.1.0.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
 
   <script>
     // Mobile menu toggle
@@ -189,14 +212,8 @@
       });
     });
 
-    // Fake submit handler
-    function handleSubmit(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim() || '朋友';
-      alert(`已收到！謝謝你，${name}。我們會盡快回覆你 🙌`);
-      e.target.reset();
-      return false;
-    }
+    // DataTable
+    let table = new DataTable('#myTable');
 
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
