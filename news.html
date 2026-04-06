@@ -212,6 +212,15 @@
       });
     });
 
+    // Fake submit handler
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim() || '朋友';
+      alert(`已收到！謝謝你，${name}。我們會盡快回覆你 🙌`);
+      e.target.reset();
+      return false;
+    }
+
     // DataTable
     let table = new DataTable('#myTable');
 
