@@ -218,7 +218,7 @@
       
 
     }
-    
+
     .hero-grid2 div{
       padding-left:2em;
     }
@@ -271,6 +271,7 @@
     }
     .section-title p{margin:0;color:var(--muted);font-weight:600}
 
+    table a:hover {color:var(--tempB);}
     .grid3{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
@@ -286,6 +287,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 80px;
     }
+    
     .card{
       background: var(--card);
       border: 1px solid var(--border);
