@@ -203,7 +203,7 @@
       position:relative;
       overflow:hidden;
       padding: 64px 0 24px;
-      background: url('images/bible.jpg') no-repeat left center;
+      background: url('images/jeffjacobs.jpg') no-repeat left center;
       background-size: cover;
 
     }
@@ -370,7 +370,7 @@
     .foot span a:hover {color:var(--bg); background-color:var(--tempD);}
     .foot ul { text-align: center; margin:0 0 1em; padding: 0;}
     .foot ul li {font-size:16px;color: var(--bg); list-style: none; padding-right:1em; margin:auto;display: inline-block;}
-    .foot .facebook {font-family: "arial"; font-weight: bold; font-size: 20px; padding:7px 12px; border-radius: 50px; background: var(--tempC);transition: all .3s ease;}
+    .foot .facebook {font-family: "Arial"; font-weight: bold; font-size: 20px; padding:5px 12px 3px 12px ; border-radius: 50px; background: var(--tempC);transition: all .3s ease;}
     .foot a.facebook:hover {background: var(--bg);color: var(--tempC);}
 
 
