@@ -297,7 +297,7 @@
     }
     .card h3{margin:4px 0 6px;font-size:20px}
     .card p{margin:0 0 18px 0;color:var(--muted)}
-    .meta{margin-top:10px;color:var(--muted);font-weight:650;font-size:14px}
+    .meta{margin-top:10px;color:var(--muted);font-weight:650;font-size:15px}
     .card-color{
       /*background: var(--card);*/
       border: 1px solid var(--border);
