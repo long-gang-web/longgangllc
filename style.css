@@ -180,7 +180,7 @@
 
       width:320px;
       padding:20px;
-      background-color: var(--card);
+      /*background-color: var(--card);*/
       color:var(--muted);
       font-weight:bold;
       font-size: 16.5px;
